@@ -1,32 +1,32 @@
 # AM Audio Visualizer
 
-**Arctic Monkeys Audio Visualizer**
+An audio-reactive desktop wallpaper for [Lively Wallpaper](https://rocksdanister.github.io/lively/), inspired by the visual identity of Arctic Monkeys' *AM* album and the waveform in ["Do I Wanna Know?"](https://www.youtube.com/watch?v=bpOSxM0rNPM).
 
-A dynamic and interactive wallpaper for [Lively Wallpaper](https://rocksdanister.github.io/lively/), inspired by the visual identity and sound waves of the Arctic Monkeys' album _AM_.
+![AM Audio Visualizer preview](thumbnail.png)
 
-![Preview](https://github.com/sans-script/AM-Audio-Visualizer/blob/main/preview.gif)
-_Dynamic waveform visualization where the amplitude scales dynamically with the audio input level. The peaks and valleys are generated using a combination of sine functions and Gaussian envelopes, directly responding to the energy and frequency of the playing audio to create the signature AM (Amplitude Modulation) oscillation patterns._
+The visualizer is built with **HTML5 Canvas** and **vanilla JavaScript**. Its waveform responds to audio input, using sine functions and Gaussian envelopes to shape the peaks and valleys.
 
-## About the Project
+## Installation
 
-This project is an audio visualizer made with HTML5 Canvas and vanilla JavaScript. It reacts to the sound playing on your computer, generating visual behaviors similar to the classic waves from the ["Do I Wanna Know?"](https://www.youtube.com/watch?v=bpOSxM0rNPM) music video from the _AM_ album.
+**Requirements:** Windows and [Lively Wallpaper](https://rocksdanister.github.io/lively/).
 
-## Manual Installation and Usage
+1. Download this repository using **Code → Download ZIP**.
+2. Extract the ZIP archive.
+3. Move the extracted project folder into your Lively Wallpaper library folder.
+4. Rename the project folder to `hygciyc.diwn` so it matches the wallpaper ID configured in `LivelyInfo.json`.
+5. In Lively Wallpaper, add or select the wallpaper and set it as your desktop background.
 
-1. On GitHub, click in the **Code** button and then click in **Download ZIP**.
+If Lively does not detect it automatically, use Lively's wallpaper import/add option and select the extracted project folder.
 
-2. Extract the downloaded ZIP file into the [Lively Wallpaper folder](https://www.google.com/search?q=where+is+the+lively+wallpaper+folder).
+## Project files
 
-3. Rename the project folder to `hygciyc.diwn`, that's really important.
+- `index.html` — wallpaper entry point.
+- `script.min.js` — canvas rendering and audio-reactive visualization.
+- `LivelyInfo.json` — Lively Wallpaper metadata.
+- `thumbnail.png` — static preview image.
 
-4. Open Lively Wallpaper and set it as your active wallpaper.
-
-## Author
-
-- **Alexandre Santos**
-- GitHub: [AM Audio Visualizer](https://github.com/sans-script/AM-Audio-Visualizer)
+An animated capture is available in [preview.gif](preview.gif). The GIF is large, so it is linked separately rather than loaded automatically in this README.
 
 ## License
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
-
+Released under the [MIT License](LICENSE).
